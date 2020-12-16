@@ -1,0 +1,338 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/itemNameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:text="Item"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/card_details"
+        android:layout_marginBottom="@dimen/_20sdp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_5sdp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="car_type"
+                    android:layout_alignParentStart="true"
+                    android:paddingStart="@dimen/_10sdp"
+                    tools:ignore="RtlCompat"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14ssp"
+                    android:textColor="#000000"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    tools:ignore="RtlCompat"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:gravity="center"
+                        android:id="@+id/drop_des">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/arrow_details"
+                            />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <Space
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="match_parent"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        />
+
+                    <Space
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="match_parent"/>
+
+
+                    <Space
+                        android:layout_width="@dimen/_5sdp"
+                        android:layout_height="match_parent"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_10ssp"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_alignParentStart="true"
+                    android:paddingStart="@dimen/_15sdp"
+                    tools:ignore="RtlCompat" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cairo"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_alignParentEnd="true"
+                    android:paddingEnd="@dimen/_15sdp"
+                    tools:ignore="RtlCompat" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Body Type"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_alignParentStart="true"
+                    android:paddingStart="@dimen/_15sdp"
+                    tools:ignore="RtlCompat" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sedan"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_alignParentEnd="true"
+                    android:paddingEnd="@dimen/_15sdp"
+                    tools:ignore="RtlCompat" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transmission Type"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_alignParentStart="true"
+                    android:paddingStart="@dimen/_15sdp"
+                    tools:ignore="RtlCompat" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Automatic"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_alignParentEnd="true"
+                    android:paddingEnd="@dimen/_15sdp"
+                    tools:ignore="RtlCompat" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Details"
+                    android:textColor="#000000"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_16ssp"
+                    tools:ignore="RtlCompat"
+                    android:id="@+id/text_details"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_below="@id/text_details"
+                    android:id="@+id/space_details"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/space_details"
+                android:id="@+id/layout_des"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="details_des"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:id="@+id/txt_des"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_below="@id/txt_des"
+                    android:id="@+id/space_down"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All prices"
+                    tools:ignore="NotSibling,RtlCompat"
+                    android:layout_below="@+id/space_down"
+                    android:paddingStart="@dimen/_25sdp"
+                    android:id="@+id/text_all_prices"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Top prices"
+                    tools:ignore="NotSibling,RtlCompat"
+                    android:layout_below="@+id/space_down"
+                    android:id="@+id/text_top_prices"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"
+                    android:paddingEnd="@dimen/_50sdp"
+                    />
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/price_layout"
+                    android:gravity="center"
+                    android:layout_below="@id/text_all_prices">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_20sdp"
+                        android:background="#000000"
+                        android:id="@+id/comments_recycler"
+                        android:layout_below="@id/space_down"
+                        android:visibility="visible"
+                        android:layout_gravity="start"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_20sdp"
+                        android:background="#000000"
+                        android:id="@+id/comments_recycler1"
+                        android:layout_toRightOf="@+id/comments_recycler"
+                        android:layout_below="@id/space_down"
+                        android:visibility="visible"
+                        android:layout_gravity="start"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_below="@id/price_layout"
+                    android:hint="add_price"
+                    android:textColor="#000000"
+                    android:id="@+id/add_price"
+                    android:layout_toLeftOf="@+id/add_btn"
+                    android:gravity="center"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    tools:ignore="RtlCompat"
+                    android:inputType="number"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:textColor="#000000"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/add_btn"
+                    android:layout_below="@id/price_layout"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    tools:ignore="RtlCompat" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_5sdp"
+                    android:layout_below="@+id/add_price"/>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout >

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <FrameLayout
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="91dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="#8dd6d2"
+            android:layout_gravity="center"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="#E60123"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"/>
+
+            </FrameLayout>
+    </FrameLayout>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/circularImageView2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/shadow"
+        android:src="@drawable/ic_launcher_background"
+        app:civ_shadow="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
